@@ -13,6 +13,7 @@ struct VKLogin: View {
     @State var login = ""
     @State var password = ""
     @State var shouldShowLogo: Bool = true
+    @State var showIncorrectCredentialsWarning = false
     
     private let keyboardPublisher = Publishers.Merge(
         NotificationCenter.default.publisher(for: UIResponder.keyboardWillShowNotification)
@@ -20,6 +21,18 @@ struct VKLogin: View {
         NotificationCenter.default.publisher(for: UIResponder.keyboardWillHideNotification)
             .map { notification in false }
     ).eraseToAnyPublisher()
+    
+    
+    private func verifyLogindata() {
+        if login == "1234" && password == "1234" {
+            // TO DO Autorizing
+        } else {
+            showIncorrectCredentialsWarning = true
+        }
+        
+        password = ""
+    }
+    
     
     
     var body: some View {
@@ -76,7 +89,7 @@ struct VKLogin: View {
                 
                 HStack {
                     Button {
-                        print("LoginButton Pressed")
+                        verifyLogindata()
                     } label: {
                         Label("Войти", systemImage: "chevron.right.circle")
                     }
@@ -123,6 +136,8 @@ struct VKLogin: View {
             
         }
     
+        .alert(isPresented: $showIncorrectCredentialsWarning, content: { Alert(title: Text("Ошибка"), message: Text("Неверный логин или пароль"))
+        })
       
         
 }
