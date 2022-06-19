@@ -26,16 +26,8 @@ ScrollView {
             Image("friendLogo")
                 .resizable()
                 .frame(width: 80, height: 80)
-//                .border(Color.red)
-//                .background(Circle().fill(Color.white).shadow(radius: 5))
-//                .clipShape(Circle())
-//                .overlay {
-//                    Circle().stroke(.white, lineWidth: 2)
-//                }
-//                .shadow(radius: 7)
                 .modifier(CircleShadow(shadowColor: .gray, shadowRadius: 9))
                 
-            
             
             
             Text("Spider Man")
@@ -48,6 +40,9 @@ ScrollView {
                 } // HStack
                     .padding(.bottom, 650)
         
+            
+            
+            
             } // VStack
                     .padding()
         } // ScrollView
