@@ -1,5 +1,5 @@
 //
-//  IconImageViewBuilder.swift
+//  BackgroundImage.swift
 //  TestSwiftUI
 //
 //  Created by Ованес Захарян on 19.06.2022.
@@ -8,7 +8,7 @@
 import SwiftUI
 
 
-struct IconImage: View {
+struct BackgroundImage: View {
     
     var content: Image
     
@@ -19,7 +19,7 @@ struct IconImage: View {
     var body: some View {
         content
             .resizable()
-            .frame(width: 80, height: 80)
-            .modifier(CircleShadow(shadowColor: .white, shadowRadius: 9))
+            .edgesIgnoringSafeArea(.all)
+            .aspectRatio(contentMode: .fill)
     }
 }
