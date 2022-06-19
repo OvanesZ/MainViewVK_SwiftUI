@@ -8,7 +8,7 @@
 import SwiftUI
 import Combine
 
-struct ContentView: View {
+struct VKLogin: View {
     
     @State var login = ""
     @State var password = ""
@@ -24,6 +24,12 @@ struct ContentView: View {
     
     var body: some View {
        
+    
+        
+        
+        
+        
+        
         
         ZStack {
             
@@ -137,6 +143,6 @@ extension UIApplication {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        VKLogin()
     }
 }
