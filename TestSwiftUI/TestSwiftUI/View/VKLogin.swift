@@ -24,6 +24,12 @@ struct VKLogin: View {
     
     var body: some View {
        
+    
+        
+        
+        
+        
+        
         
         ZStack {
             
