@@ -27,6 +27,7 @@
 		4E32B149286860B700030D8D /* GroupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E32B148286860B700030D8D /* GroupsView.swift */; };
 		4E32B14B28687B4A00030D8D /* FriendMainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E32B14A28687B4A00030D8D /* FriendMainMenu.swift */; };
 		4E32B14D28687D1C00030D8D /* GroupsMainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E32B14C28687D1C00030D8D /* GroupsMainMenu.swift */; };
+		4E32B1502868A57100030D8D /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E32B14F2868A57100030D8D /* MainMenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		4E32B148286860B700030D8D /* GroupsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsView.swift; sourceTree = "<group>"; };
 		4E32B14A28687B4A00030D8D /* FriendMainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendMainMenu.swift; sourceTree = "<group>"; };
 		4E32B14C28687D1C00030D8D /* GroupsMainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsMainMenu.swift; sourceTree = "<group>"; };
+		4E32B14F2868A57100030D8D /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 		4E32B135285F4E8800030D8D /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				4E32B14E2868A54100030D8D /* MainMenu */,
 				4E32B13F28670F8800030D8D /* Friends */,
 				4E32B14028670F9400030D8D /* Groups */,
 				4E32B13D28670F7500030D8D /* Login */,
@@ -228,6 +231,14 @@
 				4E32B14428685DED00030D8D /* Group.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		4E32B14E2868A54100030D8D /* MainMenu */ = {
+			isa = PBXGroup;
+			children = (
+				4E32B14F2868A57100030D8D /* MainMenuView.swift */,
+			);
+			path = MainMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,6 +373,7 @@
 			files = (
 				4E32B14528685DED00030D8D /* Group.swift in Sources */,
 				4E32B131285F48DF00030D8D /* IconImageViewBuilder.swift in Sources */,
+				4E32B1502868A57100030D8D /* MainMenuView.swift in Sources */,
 				4E1EB9B7285BACC30033121F /* VKLogin.swift in Sources */,
 				4E32B13C28670CD600030D8D /* ContainerView.swift in Sources */,
 				4E32B12E285F389800030D8D /* CircleShadow.swift in Sources */,
