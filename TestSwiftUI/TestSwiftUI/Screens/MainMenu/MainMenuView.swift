@@ -26,7 +26,17 @@ struct MainMenuView: View {
                 .tabItem {
                     Image(systemName: "rectangle.3.group")
                     Text("Группы")
+                        
                 }.tag(2)
+            
+            
+            
+            NewsView()
+                .tabItem {
+                    Image(systemName: "newspaper.fill")
+                    Text("Новости")
+                        
+                }.tag(3)
         }
         
         

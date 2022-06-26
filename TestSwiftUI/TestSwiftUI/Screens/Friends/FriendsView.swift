@@ -31,6 +31,9 @@ struct FriendsView: View {
             }
         }
         .navigationBarTitle("Друзья", displayMode: .inline)
+//        .navigationBarHidden(true)
+
+//        .navigationTitle("Друзья")
         
 
     }

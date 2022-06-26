@@ -18,7 +18,7 @@ struct GroupsCell: View {
          
          
                 VStack {
-                    HStack {
+                    HStack(alignment: .center, spacing: 0) {
                         IconImage {
                             Image(group.imageName)
                         }

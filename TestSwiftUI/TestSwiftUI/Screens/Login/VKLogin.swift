@@ -26,7 +26,7 @@ struct VKLogin: View {
     
     
     private func verifyLogindata() {
-        if login == "1234" && password == "1234" {
+        if login == "1" && password == "1" {
             
             isUserLoggedIn = true
 

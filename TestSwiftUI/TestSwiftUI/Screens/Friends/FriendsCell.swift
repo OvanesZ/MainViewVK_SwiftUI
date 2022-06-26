@@ -18,36 +18,18 @@ struct FriendsCell: View {
         
         ZStack {
             
-//            GeometryReader { geometry in
-//                Image("backgroundCell")
-//                    .resizable()
-//                    .edgesIgnoringSafeArea(.all)
-//                    .aspectRatio(contentMode: .fill)
-//            }
-            
-          
-                    
-                    
-                    
-                    
-                    
                     HStack(alignment: .center, spacing: 0) {
                         
-                        Image(friend.imageName)
-                            .resizable()
-                            .frame(width: 80, height: 80)
-                            .aspectRatio(contentMode: .fit)
-                            .modifier(CircleShadow(shadowColor: .black, shadowRadius: 9))
+                        IconImage {
+                            Image(friend.imageName)
+                        }
                         
                         
                         
-                        Text("\(friend.name)")
-//                            .padding(.trailing, 150)
-                            .padding(.leading, 25)
-                            .controlSize(.large)
-                            .foregroundColor(.black)
+                        NameText {
+                            Text("\(friend.name)")
+                        }
                     } // HStack
-//                    .padding(.bottom, 650)
  
         } // ZStack
     } // body

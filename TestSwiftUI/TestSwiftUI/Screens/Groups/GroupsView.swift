@@ -32,6 +32,9 @@ struct GroupsView: View {
             }
         }
         .navigationBarTitle("Группы", displayMode: .inline)
+//        .navigationBarHidden(true)
+  
+//          .navigationTitle("Группы")
         
     }
 }
