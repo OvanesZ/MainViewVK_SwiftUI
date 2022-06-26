@@ -20,6 +20,12 @@
 		4E32B134285F4AEB00030D8D /* GroupsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E32B133285F4AEB00030D8D /* GroupsCell.swift */; };
 		4E32B137285F4F6A00030D8D /* BackgroundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E32B136285F4F6A00030D8D /* BackgroundImage.swift */; };
 		4E32B139285F511A00030D8D /* NameTextViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E32B138285F511A00030D8D /* NameTextViewBuilder.swift */; };
+		4E32B13C28670CD600030D8D /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E32B13B28670CD600030D8D /* ContainerView.swift */; };
+		4E32B14328685DE200030D8D /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E32B14228685DE200030D8D /* Friend.swift */; };
+		4E32B14528685DED00030D8D /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E32B14428685DED00030D8D /* Group.swift */; };
+		4E32B1472868609F00030D8D /* FriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E32B1462868609F00030D8D /* FriendsView.swift */; };
+		4E32B149286860B700030D8D /* GroupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E32B148286860B700030D8D /* GroupsView.swift */; };
+		4E32B14B28687B4A00030D8D /* FriendMainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E32B14A28687B4A00030D8D /* FriendMainMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +62,12 @@
 		4E32B133285F4AEB00030D8D /* GroupsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsCell.swift; sourceTree = "<group>"; };
 		4E32B136285F4F6A00030D8D /* BackgroundImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImage.swift; sourceTree = "<group>"; };
 		4E32B138285F511A00030D8D /* NameTextViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameTextViewBuilder.swift; sourceTree = "<group>"; };
+		4E32B13B28670CD600030D8D /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
+		4E32B14228685DE200030D8D /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		4E32B14428685DED00030D8D /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		4E32B1462868609F00030D8D /* FriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsView.swift; sourceTree = "<group>"; };
+		4E32B148286860B700030D8D /* GroupsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsView.swift; sourceTree = "<group>"; };
+		4E32B14A28687B4A00030D8D /* FriendMainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendMainMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +120,7 @@
 			children = (
 				4E1EB9B4285BACC30033121F /* TestSwiftUIApp.swift */,
 				4E1EB9B8285BACC50033121F /* Assets.xcassets */,
-				4E32B135285F4E8800030D8D /* View */,
+				4E32B135285F4E8800030D8D /* Screens */,
 				4E1EB9BA285BACC50033121F /* Preview Content */,
 				4E32B132285F48E500030D8D /* ViewBuilder */,
 				4E32B12F285F46FD00030D8D /* ViewModifire */,
@@ -159,14 +171,60 @@
 			path = ViewBuilder;
 			sourceTree = "<group>";
 		};
-		4E32B135285F4E8800030D8D /* View */ = {
+		4E32B135285F4E8800030D8D /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				4E32B13F28670F8800030D8D /* Friends */,
+				4E32B14028670F9400030D8D /* Groups */,
+				4E32B13D28670F7500030D8D /* Login */,
+				4E32B14128685DC800030D8D /* Models */,
+				4E32B13A28670CBD00030D8D /* Navigation */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		4E32B13A28670CBD00030D8D /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				4E32B13B28670CD600030D8D /* ContainerView.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		4E32B13D28670F7500030D8D /* Login */ = {
 			isa = PBXGroup;
 			children = (
 				4E1EB9B6285BACC30033121F /* VKLogin.swift */,
-				4E128396285F19DD00CDFFDB /* FriendsCell.swift */,
-				4E32B133285F4AEB00030D8D /* GroupsCell.swift */,
 			);
-			path = View;
+			path = Login;
+			sourceTree = "<group>";
+		};
+		4E32B13F28670F8800030D8D /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				4E128396285F19DD00CDFFDB /* FriendsCell.swift */,
+				4E32B1462868609F00030D8D /* FriendsView.swift */,
+				4E32B14A28687B4A00030D8D /* FriendMainMenu.swift */,
+			);
+			path = Friends;
+			sourceTree = "<group>";
+		};
+		4E32B14028670F9400030D8D /* Groups */ = {
+			isa = PBXGroup;
+			children = (
+				4E32B133285F4AEB00030D8D /* GroupsCell.swift */,
+				4E32B148286860B700030D8D /* GroupsView.swift */,
+			);
+			path = Groups;
+			sourceTree = "<group>";
+		};
+		4E32B14128685DC800030D8D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4E32B14228685DE200030D8D /* Friend.swift */,
+				4E32B14428685DED00030D8D /* Group.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,14 +357,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E32B14528685DED00030D8D /* Group.swift in Sources */,
 				4E32B131285F48DF00030D8D /* IconImageViewBuilder.swift in Sources */,
 				4E1EB9B7285BACC30033121F /* VKLogin.swift in Sources */,
+				4E32B13C28670CD600030D8D /* ContainerView.swift in Sources */,
 				4E32B12E285F389800030D8D /* CircleShadow.swift in Sources */,
 				4E32B134285F4AEB00030D8D /* GroupsCell.swift in Sources */,
+				4E32B149286860B700030D8D /* GroupsView.swift in Sources */,
 				4E32B139285F511A00030D8D /* NameTextViewBuilder.swift in Sources */,
+				4E32B1472868609F00030D8D /* FriendsView.swift in Sources */,
 				4E1EB9B5285BACC30033121F /* TestSwiftUIApp.swift in Sources */,
+				4E32B14328685DE200030D8D /* Friend.swift in Sources */,
 				4E32B137285F4F6A00030D8D /* BackgroundImage.swift in Sources */,
 				4E128397285F19DD00CDFFDB /* FriendsCell.swift in Sources */,
+				4E32B14B28687B4A00030D8D /* FriendMainMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
