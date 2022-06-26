@@ -20,6 +20,6 @@ struct IconImage: View {
         content
             .resizable()
             .frame(width: 80, height: 80)
-            .modifier(CircleShadow(shadowColor: .white, shadowRadius: 9))
+            .modifier(CircleShadow(shadowColor: .black, shadowRadius: 9))
     }
 }

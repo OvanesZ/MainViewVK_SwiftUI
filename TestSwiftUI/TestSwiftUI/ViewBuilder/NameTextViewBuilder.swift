@@ -21,7 +21,7 @@ struct NameText: View {
 //            .padding(.trailing, 5)
             .padding(.leading, 25)
             .controlSize(.large)
-            .foregroundColor(.white)
+            .foregroundColor(.black)
             .lineLimit(1)
     }
 }

@@ -23,7 +23,7 @@ struct ContainerView: View {
                 
                 // MARK: - NavigationLink
                 
-                NavigationLink(destination: FriendsView(), isActive: $showFriendsScreen) {
+                NavigationLink(destination: GroupsView(), isActive: $showFriendsScreen) {
                     EmptyView() // безрзмерная заглушка (вьюшка) 
                 }
             }

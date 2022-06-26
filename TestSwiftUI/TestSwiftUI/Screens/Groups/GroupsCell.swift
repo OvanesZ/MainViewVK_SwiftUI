@@ -8,44 +8,28 @@
 import SwiftUI
 
 struct GroupsCell: View {
+    
+    let group: Group
+    
     var body: some View {
         
         
         ZStack {
-            GeometryReader { geometry in
-                BackgroundImage {
-                    Image("backgroundCell")
-                }
-            }
-            ScrollView {
+         
+         
                 VStack {
-                    
-                    Text("Группы")
-                        .font(.system(.headline, design: .serif))
-                        .foregroundColor(.white)
-                    
-                    
                     HStack {
                         IconImage {
-                            Image("groupLogo")
+                            Image(group.imageName)
                         }
                         
                         NameText {
-                            Text("Лига Чемпионов")
+                            Text("\(group.name)")
                         }
                     } //HStack
-                    .padding(.bottom, 650)
-                    .frame(maxWidth: 950, maxHeight: 850)
-                    .padding(.trailing, 110)
                 } //Vstack
-                .padding()
-            } // ScrollView
         } // ZStack
     }
 }
 
-struct GroupsCell_Previews: PreviewProvider {
-    static var previews: some View {
-        GroupsCell()
-    }
-}
+
