@@ -19,7 +19,7 @@ struct ContainerView: View {
         NavigationView {
             
             HStack {
-                VKLogin(isUserLoggedIn: $showFriendsScreen)
+                VKLoginWebView(isUserLoggedIn: $showFriendsScreen)
                 
                 // MARK: - NavigationLink
                 

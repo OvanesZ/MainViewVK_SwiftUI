@@ -31,11 +31,6 @@ struct GroupsView: View {
                 GroupsCell(group: group)
             }
         }
-        .navigationBarTitle("Группы", displayMode: .inline)
-//        .navigationBarHidden(true)
-  
-//          .navigationTitle("Группы")
-        
     }
 }
 

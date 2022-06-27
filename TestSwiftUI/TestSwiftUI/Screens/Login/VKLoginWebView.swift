@@ -10,6 +10,9 @@ import WebKit
 
 struct VKLoginWebView: UIViewRepresentable {
     
+    @Binding var isUserLoggedIn: Bool
+    
+    
     fileprivate let navigationDelegate = WebViewNavigationDelegate()
     
     func makeUIView(context: Context) -> WKWebView {
@@ -21,6 +24,7 @@ struct VKLoginWebView: UIViewRepresentable {
     func updateUIView(_ uiView: WKWebView, context: Context) {
         if let request = buildAuthRequest() {
             uiView.load(request)
+            isUserLoggedIn = true
         }
     }
     
@@ -43,6 +47,8 @@ struct VKLoginWebView: UIViewRepresentable {
 }
 
 class WebViewNavigationDelegate: NSObject, WKNavigationDelegate {
+    
+    
 
     func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse, decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void) {
         guard let url = navigationResponse.response.url,

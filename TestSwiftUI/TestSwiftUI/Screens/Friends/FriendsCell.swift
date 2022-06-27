@@ -9,45 +9,27 @@ import SwiftUI
 
 struct FriendsCell: View {
   
-    
     let friend: Friend
-    
-    
     
     var body: some View {
         
+        
         ZStack {
-            
-                    HStack(alignment: .center, spacing: 0) {
-                        
-                        IconImage {
-                            Image(friend.imageName)
-                        }
-                        
-                        
-                        
-                        NameText {
-                            Text("\(friend.name)")
-                        }
-                    } // HStack
- 
+            VStack {
+                HStack(alignment: .center, spacing: 0) {
+                            IconImage {
+                                Image(friend.imageName)
+                            }
+                            
+                            NameText {
+                                Text("\(friend.name)")
+                            }
+                } // HStack
+            } // VStack
         } // ZStack
     } // body
 } // FriendsCell
 
-
-
-
-
-
-
-
-//extension View {
-//    func debug() -> Self {
-//        print(Mirror(reflecting: self).subjectType)
-//        return self
-//    }
-//}
 
 
 

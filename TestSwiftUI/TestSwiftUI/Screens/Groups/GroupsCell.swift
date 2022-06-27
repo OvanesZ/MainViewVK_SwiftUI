@@ -15,8 +15,6 @@ struct GroupsCell: View {
         
         
         ZStack {
-         
-         
                 VStack {
                     HStack(alignment: .center, spacing: 0) {
                         IconImage {
