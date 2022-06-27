@@ -29,6 +29,7 @@
 		4E32B14D28687D1C00030D8D /* GroupsMainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E32B14C28687D1C00030D8D /* GroupsMainMenu.swift */; };
 		4E32B1502868A57100030D8D /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E32B14F2868A57100030D8D /* MainMenuView.swift */; };
 		4E32B1532868ABF700030D8D /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E32B1522868ABF700030D8D /* NewsView.swift */; };
+		4E32B155286A0F1B00030D8D /* VKLoginWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E32B154286A0F1B00030D8D /* VKLoginWebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		4E32B14C28687D1C00030D8D /* GroupsMainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsMainMenu.swift; sourceTree = "<group>"; };
 		4E32B14F2868A57100030D8D /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
 		4E32B1522868ABF700030D8D /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
+		4E32B154286A0F1B00030D8D /* VKLoginWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKLoginWebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				4E1EB9B6285BACC30033121F /* VKLogin.swift */,
+				4E32B154286A0F1B00030D8D /* VKLoginWebView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 				4E32B131285F48DF00030D8D /* IconImageViewBuilder.swift in Sources */,
 				4E32B1502868A57100030D8D /* MainMenuView.swift in Sources */,
 				4E1EB9B7285BACC30033121F /* VKLogin.swift in Sources */,
+				4E32B155286A0F1B00030D8D /* VKLoginWebView.swift in Sources */,
 				4E32B13C28670CD600030D8D /* ContainerView.swift in Sources */,
 				4E32B1532868ABF700030D8D /* NewsView.swift in Sources */,
 				4E32B12E285F389800030D8D /* CircleShadow.swift in Sources */,
