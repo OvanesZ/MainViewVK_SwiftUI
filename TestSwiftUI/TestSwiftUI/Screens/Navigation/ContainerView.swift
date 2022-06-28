@@ -13,7 +13,6 @@ struct ContainerView: View {
     
     
     
-    
     var body: some View {
         
         NavigationView {
@@ -31,8 +30,8 @@ struct ContainerView: View {
     }
 }
 
-struct ContainerView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContainerView()
-    }
-}
+//struct ContainerView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ContainerView()
+//    }
+//}

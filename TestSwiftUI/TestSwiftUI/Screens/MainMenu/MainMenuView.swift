@@ -10,14 +10,17 @@ import SwiftUI
 struct MainMenuView: View {
     
     @State var selectedView = 1
-    private var navigationTitleName = ["Друзья", "Группы", "Новости"]
+    var navigationTitleName = ["Друзья", "Группы", "Новости"]
+    
+    let friend = Friend()
+    let networkService = NetworkService()
     
     var body: some View {
         
         
         TabView(selection: $selectedView) {
             
-            FriendsView()
+            FriendsView(viewModel: FriendViewModel(friend: friend, networkService: self.networkService))
                 .tabItem {
                     Image(systemName: "person.3.sequence")
                     Text("Друзья")
@@ -41,8 +44,8 @@ struct MainMenuView: View {
     }
 }
 
-struct MainMenuView_Previews: PreviewProvider {
-    static var previews: some View {
-        MainMenuView()
-    }
-}
+//struct MainMenuView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        MainMenuView()
+//    }
+//}
