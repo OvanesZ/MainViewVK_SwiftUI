@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct GroupsCell: View {
     
@@ -17,9 +18,15 @@ struct GroupsCell: View {
         ZStack {
                 VStack {
                     HStack(alignment: .center, spacing: 0) {
-                        IconImage {
-                            Image(group.imageName)
-                        }
+//                        IconImage {
+//                            Image(group.imageName)
+//                        }
+                        
+                        KFImage(URL(string: group.photoUrl)!)
+                        .padding()
+                        .frame(width: 80, height: 80)
+                        .modifier(CircleShadow(shadowColor: .black, shadowRadius: 9))
+                        
                         
                         NameText {
                             Text("\(group.name)")

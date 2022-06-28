@@ -99,36 +99,36 @@ func loadFriendsID(token: String, completion: @escaping (Result<[Friend], Error>
 //    }
 //}
 
-    // MARK: - load user groups
+     //MARK: - load user groups
 
-//func loadGroup(token: String, completion: @escaping (Result<[MyGroups], Error>) -> Void) {
-//    let baseUrl = "https://api.vk.com"
-//    let path = "/method/groups.get"
-//    let params: Parameters = [
-//        "access_token": token,
-//        "extended": 1,
-//      //  "count": 1,
-//        "v": "5.92"
-//    ]
-//    
-//    AF.request(baseUrl + path, method: .get, parameters: params).response {
-//        response in
-//        switch response.result {
-//        case .failure(let error):
-//            completion(.failure(error))
-//        case .success(let data):
-//            guard let data = data,
-//                  let json = try? JSON(data: data) else { return }
-//            
-//     
-//            let groupsJson = json["response"]["items"].arrayValue
-//            let groups = groupsJson.map { MyGroups(json: $0) }
-//            
-//            
-//            completion(.success(groups))
-//        }
-//    }
-//}
+func loadGroup(token: String, completion: @escaping (Result<[Group], Error>) -> Void) {
+    let baseUrl = "https://api.vk.com"
+    let path = "/method/groups.get"
+    let params: Parameters = [
+        "access_token": token,
+        "extended": 1,
+      //  "count": 1,
+        "v": "5.92"
+    ]
+    
+    AF.request(baseUrl + path, method: .get, parameters: params).response {
+        response in
+        switch response.result {
+        case .failure(let error):
+            completion(.failure(error))
+        case .success(let data):
+            guard let data = data,
+                  let json = try? JSON(data: data) else { return }
+            
+     
+            let groupsJson = json["response"]["items"].arrayValue
+            let groups = groupsJson.map { Group(json: $0) }
+            
+            
+            completion(.success(groups))
+        }
+    }
+}
 
 
 // MARK: - get all photos for users

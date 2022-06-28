@@ -6,16 +6,22 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 
 class Group: Identifiable {
     
-    let id: UUID = UUID()
-    let name: String
-    let imageName: String
+    var name: String = ""
+    var photoUrl: String = ""
+    var groupImage: URL? { URL(string: "\(photoUrl)") }
+    var id: String = ""
+
     
-    internal init(name: String, imageName: String) {
-        self.name = name
-        self.imageName = imageName
+    convenience init(json: SwiftyJSON.JSON) {
+        self.init()
+        
+        self.name = json["name"].stringValue
+        self.photoUrl = json["photo_100"].stringValue
+        self.id = json["id"].stringValue
     }
 }

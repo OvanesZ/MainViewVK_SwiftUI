@@ -10,9 +10,9 @@ import SwiftUI
 struct MainMenuView: View {
     
     @State var selectedView = 1
-    var navigationTitleName = ["Друзья", "Группы", "Новости"]
     
     let friend = Friend()
+    let group = Group()
     let networkService = NetworkService()
     
     var body: some View {
@@ -26,7 +26,7 @@ struct MainMenuView: View {
                     Text("Друзья")
                 }.tag(1)
             
-            GroupsView()
+            GroupsView(viewModel: GroupViewModel(group: group, networkService: networkService))
                 .tabItem {
                     Image(systemName: "rectangle.3.group")
                     Text("Группы")
@@ -38,7 +38,6 @@ struct MainMenuView: View {
                     Text("Новости")
                 }.tag(3)
         }
-        .navigationTitle(navigationTitleName[selectedView - 1])
         
         
     }
