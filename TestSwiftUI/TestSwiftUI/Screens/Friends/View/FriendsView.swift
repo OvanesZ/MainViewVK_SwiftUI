@@ -23,7 +23,7 @@ struct FriendsView: View {
     var body: some View {
         
         List(viewModel.friends) { friend in
-            NavigationLink(destination: FriendMainView(viewModel: FriendPhotoViewModel(photo: photo, networkService: networkService, friendID: FriendViewModel(friend: friend, networkService: networkService)))) {
+            NavigationLink(destination: FriendMainView(viewModel: FriendPhotoViewModel(photo: photo, networkService: networkService, friendID: FriendViewModel(friend: friend, networkService: networkService)), displayedFriend: FriendViewModel(friend: friend, networkService: networkService))) {
                 FriendsCell(friend: friend)
             }
         }

@@ -15,7 +15,6 @@ class FriendPhotoViewModel: ObservableObject { // Отображаемый др�
     let photo: FriendPhoto
     let networkService: NetworkService
     let userToken = UserDefaults.standard.string(forKey: "vkToken")
-    let ownerID = 5272173
     let friendID: FriendViewModel?
     
     
@@ -27,10 +26,10 @@ class FriendPhotoViewModel: ObservableObject { // Отображаемый др�
         self.friendID = friendID
     }
     
-  
-
+    
+    
     public func fetchFriendPhotos() {
-
+        
         let owner = (friendID?.friend.friendID)!
         
         networkService.loadPhoto(token: userToken!, owner: owner, completion:  { result in
@@ -43,9 +42,9 @@ class FriendPhotoViewModel: ObservableObject { // Отображаемый др�
             }
         })
     }
-  
-
-
-
-
+    
+    
+    
+    
+    
 }

@@ -25,12 +25,14 @@ struct FriendPhotoCell: View {
                 HStack(alignment: .center, spacing: 0) {
                     
                     
-                    KFImage(URL(string: photo.url))
+                    KFImage(URL(string: self.photo.url)!)
+                        .cancelOnDisappear(true)
                         .padding()
+                        .background(Color.blue)
 //                        .frame(width: 80, height: 80)
 //                        .modifier(CircleShadow(shadowColor: .black, shadowRadius: 9))
                     
-                    
+
                     
                     
                 } // HStack
@@ -38,9 +40,3 @@ struct FriendPhotoCell: View {
         } // ZStack
     }
 }
-
-//struct FriendPhotoCell_Previews: PreviewProvider {
-//    static var previews: some View {
-//        FriendPhotoCell()
-//    }
-//}
