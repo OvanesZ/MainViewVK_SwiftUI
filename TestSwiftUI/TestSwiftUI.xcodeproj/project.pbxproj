@@ -15,6 +15,9 @@
 		4E1EB9C6285BACC50033121F /* TestSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1EB9C5285BACC50033121F /* TestSwiftUITests.swift */; };
 		4E1EB9D0285BACC50033121F /* TestSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1EB9CF285BACC50033121F /* TestSwiftUIUITests.swift */; };
 		4E1EB9D2285BACC50033121F /* TestSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1EB9D1285BACC50033121F /* TestSwiftUIUITestsLaunchTests.swift */; };
+		4E1EE55F286B6AD4004154B3 /* FriendPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1EE55E286B6AD4004154B3 /* FriendPhotoCell.swift */; };
+		4E1EE561286B6D63004154B3 /* FriendPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1EE560286B6D63004154B3 /* FriendPhoto.swift */; };
+		4E1EE563286B6FD6004154B3 /* FriendPhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1EE562286B6FD6004154B3 /* FriendPhotoViewModel.swift */; };
 		4E32B12E285F389800030D8D /* CircleShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E32B12D285F389800030D8D /* CircleShadow.swift */; };
 		4E32B131285F48DF00030D8D /* IconImageViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E32B130285F48DF00030D8D /* IconImageViewBuilder.swift */; };
 		4E32B134285F4AEB00030D8D /* GroupsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E32B133285F4AEB00030D8D /* GroupsCell.swift */; };
@@ -25,7 +28,7 @@
 		4E32B14528685DED00030D8D /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E32B14428685DED00030D8D /* Group.swift */; };
 		4E32B1472868609F00030D8D /* FriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E32B1462868609F00030D8D /* FriendsView.swift */; };
 		4E32B149286860B700030D8D /* GroupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E32B148286860B700030D8D /* GroupsView.swift */; };
-		4E32B14B28687B4A00030D8D /* FriendMainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E32B14A28687B4A00030D8D /* FriendMainMenu.swift */; };
+		4E32B14B28687B4A00030D8D /* FriendMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E32B14A28687B4A00030D8D /* FriendMainView.swift */; };
 		4E32B14D28687D1C00030D8D /* GroupsMainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E32B14C28687D1C00030D8D /* GroupsMainMenu.swift */; };
 		4E32B1502868A57100030D8D /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E32B14F2868A57100030D8D /* MainMenuView.swift */; };
 		4E32B1532868ABF700030D8D /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E32B1522868ABF700030D8D /* NewsView.swift */; };
@@ -67,6 +70,9 @@
 		4E1EB9CB285BACC50033121F /* TestSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E1EB9CF285BACC50033121F /* TestSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSwiftUIUITests.swift; sourceTree = "<group>"; };
 		4E1EB9D1285BACC50033121F /* TestSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4E1EE55E286B6AD4004154B3 /* FriendPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendPhotoCell.swift; sourceTree = "<group>"; };
+		4E1EE560286B6D63004154B3 /* FriendPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendPhoto.swift; sourceTree = "<group>"; };
+		4E1EE562286B6FD6004154B3 /* FriendPhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendPhotoViewModel.swift; sourceTree = "<group>"; };
 		4E32B12D285F389800030D8D /* CircleShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleShadow.swift; sourceTree = "<group>"; };
 		4E32B130285F48DF00030D8D /* IconImageViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconImageViewBuilder.swift; sourceTree = "<group>"; };
 		4E32B133285F4AEB00030D8D /* GroupsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsCell.swift; sourceTree = "<group>"; };
@@ -77,7 +83,7 @@
 		4E32B14428685DED00030D8D /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		4E32B1462868609F00030D8D /* FriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsView.swift; sourceTree = "<group>"; };
 		4E32B148286860B700030D8D /* GroupsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsView.swift; sourceTree = "<group>"; };
-		4E32B14A28687B4A00030D8D /* FriendMainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendMainMenu.swift; sourceTree = "<group>"; };
+		4E32B14A28687B4A00030D8D /* FriendMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendMainView.swift; sourceTree = "<group>"; };
 		4E32B14C28687D1C00030D8D /* GroupsMainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsMainMenu.swift; sourceTree = "<group>"; };
 		4E32B14F2868A57100030D8D /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
 		4E32B1522868ABF700030D8D /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
@@ -174,6 +180,24 @@
 			path = TestSwiftUIUITests;
 			sourceTree = "<group>";
 		};
+		4E1EE55D286B6AB2004154B3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4E128396285F19DD00CDFFDB /* FriendsCell.swift */,
+				4E1EE55E286B6AD4004154B3 /* FriendPhotoCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		4E1EE564286B8B57004154B3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4E32B1462868609F00030D8D /* FriendsView.swift */,
+				4E32B14A28687B4A00030D8D /* FriendMainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		4E32B12F285F46FD00030D8D /* ViewModifire */ = {
 			isa = PBXGroup;
 			children = (
@@ -227,9 +251,8 @@
 			isa = PBXGroup;
 			children = (
 				4E32B156286A2A7E00030D8D /* ViewModel */,
-				4E128396285F19DD00CDFFDB /* FriendsCell.swift */,
-				4E32B1462868609F00030D8D /* FriendsView.swift */,
-				4E32B14A28687B4A00030D8D /* FriendMainMenu.swift */,
+				4E1EE55D286B6AB2004154B3 /* Cells */,
+				4E1EE564286B8B57004154B3 /* View */,
 			);
 			path = Friends;
 			sourceTree = "<group>";
@@ -250,6 +273,7 @@
 			children = (
 				4E32B14228685DE200030D8D /* Friend.swift */,
 				4E32B14428685DED00030D8D /* Group.swift */,
+				4E1EE560286B6D63004154B3 /* FriendPhoto.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -274,6 +298,7 @@
 			isa = PBXGroup;
 			children = (
 				4E32B157286A2A9800030D8D /* FriendViewModel.swift */,
+				4E1EE562286B6FD6004154B3 /* FriendPhotoViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -439,6 +464,7 @@
 				4E32B1502868A57100030D8D /* MainMenuView.swift in Sources */,
 				4E1EB9B7285BACC30033121F /* VKLogin.swift in Sources */,
 				4E32B155286A0F1B00030D8D /* VKLoginWebView.swift in Sources */,
+				4E1EE561286B6D63004154B3 /* FriendPhoto.swift in Sources */,
 				4E32B13C28670CD600030D8D /* ContainerView.swift in Sources */,
 				4E32B1532868ABF700030D8D /* NewsView.swift in Sources */,
 				4E32B12E285F389800030D8D /* CircleShadow.swift in Sources */,
@@ -446,15 +472,17 @@
 				4E32B14D28687D1C00030D8D /* GroupsMainMenu.swift in Sources */,
 				4E32B158286A2A9800030D8D /* FriendViewModel.swift in Sources */,
 				4E32B15B286A2DAE00030D8D /* NetworkService.swift in Sources */,
+				4E1EE55F286B6AD4004154B3 /* FriendPhotoCell.swift in Sources */,
 				4E32B134285F4AEB00030D8D /* GroupsCell.swift in Sources */,
 				4E32B149286860B700030D8D /* GroupsView.swift in Sources */,
 				4E32B139285F511A00030D8D /* NameTextViewBuilder.swift in Sources */,
 				4E32B1472868609F00030D8D /* FriendsView.swift in Sources */,
 				4E1EB9B5285BACC30033121F /* TestSwiftUIApp.swift in Sources */,
+				4E1EE563286B6FD6004154B3 /* FriendPhotoViewModel.swift in Sources */,
 				4E32B14328685DE200030D8D /* Friend.swift in Sources */,
 				4E32B137285F4F6A00030D8D /* BackgroundImage.swift in Sources */,
 				4E128397285F19DD00CDFFDB /* FriendsCell.swift in Sources */,
-				4E32B14B28687B4A00030D8D /* FriendMainMenu.swift in Sources */,
+				4E32B14B28687B4A00030D8D /* FriendMainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

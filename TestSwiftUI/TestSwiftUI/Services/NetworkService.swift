@@ -135,36 +135,36 @@ func loadGroup(token: String, completion: @escaping (Result<[Group], Error>) -> 
 
 //private let owner = friendsID
     
-//    func loadPhoto(token: String, owner: Int, completion: @escaping (Result<[Photo], Error>) -> Void) {
-//    let baseUrl = "https://api.vk.com"
-//    let path = "/method/photos.get"
-//    let params: Parameters = [
-//        "access_token": token,
-//        "extended": 1,
-//        "v": "5.131",
-//        "owner_id": owner,
-//        "album_id": "profile",
-//        "photo_sizes": 1
-//    ]
-//
-//    AF.request(baseUrl + path, method: .get, parameters: params).response {
-//        response in
-//        switch response.result {
-//        case .failure(let error):
-//            completion(.failure(error))
-//        case .success(let data):
-//            guard let data = data,
-//                  let json = try? JSON(data: data) else { return }
-//
-//
-//            let friendPhotoJson = json["response"]["items"].arrayValue
-//            let friendPhoto = friendPhotoJson.map { Photo(json: $0) }
-//
-//            completion(.success(friendPhoto))
-//        }
-//    }
-//}
-//
+    func loadPhoto(token: String, owner: Int, completion: @escaping (Result<[FriendPhoto], Error>) -> Void) {
+    let baseUrl = "https://api.vk.com"
+    let path = "/method/photos.get"
+    let params: Parameters = [
+        "access_token": token,
+        "extended": 1,
+        "v": "5.131",
+        "owner_id": owner,
+        "album_id": "profile",
+        "photo_sizes": 1
+    ]
+
+    AF.request(baseUrl + path, method: .get, parameters: params).response {
+        response in
+        switch response.result {
+        case .failure(let error):
+            completion(.failure(error))
+        case .success(let data):
+            guard let data = data,
+                  let json = try? JSON(data: data) else { return }
+
+
+            let friendPhotoJson = json["response"]["items"].arrayValue
+            let friendPhoto = friendPhotoJson.map { FriendPhoto(json: $0) }
+
+            completion(.success(friendPhoto))
+        }
+    }
+}
+
 
 
 

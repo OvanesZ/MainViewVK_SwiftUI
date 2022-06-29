@@ -11,6 +11,10 @@ struct FriendsView: View {
     
     @ObservedObject var viewModel: FriendViewModel
     
+    let friend = Friend()
+    let photo = FriendPhoto()
+    let networkService = NetworkService()
+    
     init(viewModel: FriendViewModel) {
         self.viewModel = viewModel
     }
@@ -19,7 +23,7 @@ struct FriendsView: View {
     var body: some View {
         
         List(viewModel.friends) { friend in
-            NavigationLink(destination: FriendMainMenu()) {
+            NavigationLink(destination: FriendMainView(viewModel: FriendPhotoViewModel(photo: photo, networkService: networkService, friendID: FriendViewModel(friend: friend, networkService: networkService)))) {
                 FriendsCell(friend: friend)
             }
         }
