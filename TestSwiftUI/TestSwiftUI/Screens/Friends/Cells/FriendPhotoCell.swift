@@ -12,6 +12,10 @@ struct FriendPhotoCell: View {
     
     let photo: FriendPhoto
     
+    
+ 
+    
+    
     init(photo: FriendPhoto) {
         self.photo = photo
     }

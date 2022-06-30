@@ -9,17 +9,20 @@ import SwiftUI
 
 struct FriendMainView: View {
     
-    @ObservedObject var viewModel: FriendPhotoViewModel
     let displayedFriend: FriendViewModel?
+    @ObservedObject var viewModel: FriendPhotoViewModel
+    
     
     init(viewModel: FriendPhotoViewModel, displayedFriend: FriendViewModel) {
         self.viewModel = viewModel
         self.displayedFriend = displayedFriend
     }
     
+    
+    
     private var columns: [GridItem] = [
-        GridItem(.fixed(100), spacing: 16),
-        GridItem(.fixed(100), spacing: 16)
+        GridItem(.adaptive(minimum: 100, maximum: 300), spacing: 16),
+        GridItem(.adaptive(minimum: 100, maximum: 300), spacing: 16)
     ]
     
     
@@ -30,10 +33,11 @@ struct FriendMainView: View {
             
             LazyVGrid(
                 columns: columns,
-                alignment: .center,
+                alignment: .leading,
                 spacing: 16
             ){
-                Section(header: Text("\(displayedFriend!.friend.firstName) \(displayedFriend!.friend.lastName)").font(.title)) {
+                Section(header: Text("\(displayedFriend!.friend.firstName) \(displayedFriend!.friend.lastName)").font(.title2).italic()) {
+                    
                     
                     if let photos = viewModel.photos {
                         
