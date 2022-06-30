@@ -54,6 +54,7 @@ struct FriendMainView: View {
                 spacing: 1
             ){
                 
+                // https://fonts-online.ru/fonts/volja/download Скачать новые шрифты
                 Section(header: Text("Все фотографии").font(.custom("Volja", fixedSize: 20))) {
                     
                     

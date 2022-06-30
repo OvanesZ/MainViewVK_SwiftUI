@@ -35,9 +35,9 @@ struct FriendPhotoCell: View {
                     KFImage(URL(string: self.photo.url)!)
                         .cancelOnDisappear(true)
                         .padding()
-//                        .background(Color.blue)
                         .frame(width: widthCgFloat, height: heightCgFloat)
-//                        .modifier(CircleShadow(shadowColor: .black, shadowRadius: 9))
+//                        .modifier(CircleShadow(shadowColor: .black, shadowRadius: 2))
+                       
                     
 
                     
@@ -45,5 +45,6 @@ struct FriendPhotoCell: View {
                 } // HStack
             } // VStack
         } // ZStack
+        
     }
 }
