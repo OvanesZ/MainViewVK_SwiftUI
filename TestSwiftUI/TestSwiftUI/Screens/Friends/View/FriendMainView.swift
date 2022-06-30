@@ -53,9 +53,8 @@ struct FriendMainView: View {
                 alignment: .center,
                 spacing: 1
             ){
-//                Section(header: Text("\(displayedFriend!.friend.firstName) \(displayedFriend!.friend.lastName)").font(.title2).italic())
                 
-                Section(header: Text("Все фотографии").font(.title)) {
+                Section(header: Text("Все фотографии").font(.custom("Volja", fixedSize: 20))) {
                     
                     
                     if let photos = viewModel.photos {
@@ -68,7 +67,7 @@ struct FriendMainView: View {
             }
         }
         .onAppear(perform: viewModel.fetchFriendPhotos)
-        .navigationBarTitle(Text("\(displayedFriend!.friend.firstName) \(displayedFriend!.friend.lastName)"))
+        .navigationBarTitle(Text("\(displayedFriend!.friend.firstName) \(displayedFriend!.friend.lastName)"), displayMode: .inline)
     }
     
     
