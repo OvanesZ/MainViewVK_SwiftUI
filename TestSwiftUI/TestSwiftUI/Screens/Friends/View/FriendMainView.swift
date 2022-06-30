@@ -9,8 +9,11 @@ import SwiftUI
 
 struct FriendMainView: View {
     
-    let displayedFriend: FriendViewModel?
     @ObservedObject var viewModel: FriendPhotoViewModel
+    let displayedFriend: FriendViewModel?
+    
+    
+    
     
     
     init(viewModel: FriendPhotoViewModel, displayedFriend: FriendViewModel) {
@@ -20,23 +23,39 @@ struct FriendMainView: View {
     
     
     
-    private var columns: [GridItem] = [
-        GridItem(.adaptive(minimum: 100, maximum: 300), spacing: 16),
-        GridItem(.adaptive(minimum: 100, maximum: 300), spacing: 16)
-    ]
+  
+    
+    
+    
+ 
+    
+    
+    
+    
+    
     
     
     var body: some View {
+        
+        
+        let columns: [GridItem] = [
+            GridItem(.adaptive(minimum: 100, maximum: 300), spacing: 5)
+        ]
+        
+        
+        
         
         
         ScrollView {
             
             LazyVGrid(
                 columns: columns,
-                alignment: .leading,
-                spacing: 16
+                alignment: .center,
+                spacing: 1
             ){
-                Section(header: Text("\(displayedFriend!.friend.firstName) \(displayedFriend!.friend.lastName)").font(.title2).italic()) {
+//                Section(header: Text("\(displayedFriend!.friend.firstName) \(displayedFriend!.friend.lastName)").font(.title2).italic())
+                
+                Section(header: Text("Все фотографии").font(.title)) {
                     
                     
                     if let photos = viewModel.photos {
@@ -49,15 +68,8 @@ struct FriendMainView: View {
             }
         }
         .onAppear(perform: viewModel.fetchFriendPhotos)
-        
-        
+        .navigationBarTitle(Text("\(displayedFriend!.friend.firstName) \(displayedFriend!.friend.lastName)"))
     }
     
     
 }
-
-//struct FriendMainMenu_Previews: PreviewProvider {
-//    static var previews: some View {
-//        FriendMainView()
-//    }
-//}

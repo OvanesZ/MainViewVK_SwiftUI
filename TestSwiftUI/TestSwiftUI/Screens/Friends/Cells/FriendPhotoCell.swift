@@ -11,7 +11,7 @@ import Kingfisher
 struct FriendPhotoCell: View {
     
     let photo: FriendPhoto
-    
+   
     
  
     
@@ -23,17 +23,20 @@ struct FriendPhotoCell: View {
     
     var body: some View {
         
+        let widthCgFloat = CGFloat(photo.width)
+        let heightCgFloat = CGFloat(photo.height)
         
         ZStack {
             VStack {
                 HStack(alignment: .center, spacing: 0) {
                     
+            
                     
                     KFImage(URL(string: self.photo.url)!)
                         .cancelOnDisappear(true)
                         .padding()
-                        .background(Color.blue)
-//                        .frame(width: 80, height: 80)
+//                        .background(Color.blue)
+                        .frame(width: widthCgFloat, height: heightCgFloat)
 //                        .modifier(CircleShadow(shadowColor: .black, shadowRadius: 9))
                     
 
