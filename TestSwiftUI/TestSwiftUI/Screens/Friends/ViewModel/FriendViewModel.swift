@@ -44,7 +44,7 @@ class FriendViewModel: ObservableObject { // Отображаемый друг
 
     public func fetchFriends() {
         
-        networkService.loadFriendsID(token: userToken!, completion: { result in
+        networkService.loadFriendsID(token: userToken ?? "", completion: { result in
             
             switch result {
             case let .success(friends):

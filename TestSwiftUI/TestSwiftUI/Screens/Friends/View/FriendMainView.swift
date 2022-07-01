@@ -39,7 +39,7 @@ struct FriendMainView: View {
         
         
         let columns: [GridItem] = [
-            GridItem(.adaptive(minimum: 100, maximum: 300), spacing: 5)
+            GridItem(.adaptive(minimum: 100, maximum: 300), spacing: 8)
         ]
         
         
@@ -51,7 +51,7 @@ struct FriendMainView: View {
             LazyVGrid(
                 columns: columns,
                 alignment: .center,
-                spacing: 1
+                spacing: 3
             ){
                 
                 // https://fonts-online.ru/fonts/volja/download Скачать новые шрифты
