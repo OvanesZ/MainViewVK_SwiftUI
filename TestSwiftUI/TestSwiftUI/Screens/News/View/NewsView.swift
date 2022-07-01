@@ -9,7 +9,22 @@ import SwiftUI
 
 struct NewsView: View {
     var body: some View {
-        Text("Здесь будут отображаться новости")
+        
+        
+        List {
+            Text("A List Item")
+            Text("A Second List Item")
+            Text("A Third List Item")
+            IconImage {
+                Image("groupLogo")
+            }
+            IconImage {
+                Image("friendLogo")
+            }
+            Text("Next List Item")
+        }
+        
+        
     }
 }
 
